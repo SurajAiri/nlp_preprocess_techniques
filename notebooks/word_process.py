@@ -11,7 +11,8 @@ class WordProcess:
         self.lemm = WordNetLemmatizer()
         nltk.download("stopwords")
         nltk.download('wordnet')
-        nltk.download('averaged_perceptron_tagger')
+        # nltk.download('averaged_perceptron_tagger')
+        nltk.download('averaged_perceptron_tagger_eng')
 
     def get_wordnet_pos(self, pos):
         if pos.startswith('J'):
